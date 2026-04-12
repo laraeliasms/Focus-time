@@ -2,7 +2,7 @@
 
 Sistema completo de cronograma de estudos personalizado para alunos com TDAH, com interface web e CLI.
 
-## 🚀 Características
+##  Características
 
 ### Interface Web
 - **Wizard interativo** com 6 etapas de configuração
@@ -17,7 +17,7 @@ Sistema completo de cronograma de estudos personalizado para alunos com TDAH, co
 - **Múltiplos perfis** de estudantes
 - **Armazenamento local** de dados
 
-## 📦 Instalação
+##  Instalação
 
 ```bash
 # Instalar dependências
