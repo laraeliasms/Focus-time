@@ -352,6 +352,7 @@ program
   .command('setup')
   .description('Criar novo perfil de estudos')
   .action(async () => {
+    await mostrarConselhoDoDia();
     if (!process.env.ANTHROPIC_API_KEY) {
       console.log(chalk.red('\n❌ ANTHROPIC_API_KEY não configurada!'));
       console.log(chalk.yellow('Configure com: export ANTHROPIC_API_KEY=your-key\n'));
