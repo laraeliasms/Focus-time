@@ -49,7 +49,15 @@ type Question = {
 const client = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
-
+async function mostrarConselhoDoDia() {
+  try {
+    const response = await fetch('https://api.adviceslip.com/advice');
+    const data = await response.json();
+    console.log(chalk.italic.cyan(`\n💡 Conselho FocusTime: "${data.slip.advice}"\n`));
+  } catch (error) {
+    // Falha silenciosa
+  }
+}
 async function ensureDataDir() {
   try {
     await fs.mkdir(DATA_DIR, { recursive: true });
